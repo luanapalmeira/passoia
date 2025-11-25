@@ -1,0 +1,23 @@
+.looks {
+  background-color: #FFFFFF;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d2d2d;
+    text-transform: uppercase;
+  }
+
+  .box-imagens {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

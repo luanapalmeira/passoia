@@ -1,8 +1,7 @@
 import "./banner.scss";
-// import banner from "../../assets/Banner/Banner.png";
 
 function Banner() {
-  return <section></section>;
+  return <section className="banner"></section>;
 }
 
 export default Banner;

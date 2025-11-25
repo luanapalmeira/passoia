@@ -17,16 +17,21 @@ header {
     width: 22%;
     justify-content: space-between;
     margin-right: 3rem;
+    
     li {
       list-style: none;
-      color: #000000;
-      font-family: "Poppins", sans-serif;
-      font-size: 1.25rem;
-      font-weight: 500;
-      cursor: pointer;
 
-      &:hover {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      a {
+        text-decoration: none;
+        color: #000000;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
       }
     }
   }
