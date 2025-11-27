@@ -1,0 +1,21 @@
+.novidades {
+  background-color: #FFFFFF;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  h2 {
+    color: #2D2D2D;
+    font-size: 2.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  #banner-maquiagens {
+    width: 80%;
+  }
+}
