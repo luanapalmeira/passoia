@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Lancamentos from "./components/Lancamentos";
 import Looks from "./components/Looks";
@@ -13,6 +14,7 @@ function App() {
       <Looks />
       <Lancamentos />
       <Novidades />
+      <Footer />
     </>
   );
 }

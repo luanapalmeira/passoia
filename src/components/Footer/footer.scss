@@ -1,0 +1,115 @@
+.footer {
+  background-color: #ffffff;
+  height: 35vh;
+  border-top: 5px solid #e9ecef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+
+  h3 {
+    color: #2d2d2d;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .atendimento {
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      li {
+        list-style: none;
+
+        a {
+          color: #2d2d2d;
+          font-size: 1.25rem;
+          font-family: "Roboto", sans-serif;
+          font-weight: 300;
+          text-decoration: none;
+          cursor: pointer;
+
+          &:hover {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+    }
+  }
+
+  .pagamento {
+    width: 16%;
+
+    ol {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(3, auto); //3 ícones na primeira linha
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: inherit; // garante que nada mude visualmente
+
+        li {
+          width: 70px;
+          height: 70px;
+          position: relative;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+            transition: 0.3s;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+
+      #mastercard::before {
+        background-image: url("../../assets/Footer/mastercard.png");
+      }
+
+      #visa::before {
+        background-image: url("../../assets/Footer/visa.png");
+      }
+
+      #pix::before {
+        background-image: url("../../assets/Footer/pix.png");
+      }
+
+      #boleto {
+        grid-column: 1; //Força ficar debaixo do 1º ícone
+      }
+
+      #boleto::before {
+        background-image: url("../../assets/Footer/boleto.png");
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  .redes-sociais {
+    width: 20%;
+
+    .box-icones2 {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+}
