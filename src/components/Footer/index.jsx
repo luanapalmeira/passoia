@@ -1,8 +1,4 @@
 import "./footer.scss";
-import instagram from "../../assets/Footer/instagram.png";
-import facebook from "../../assets/Footer/facebook.png";
-import youtube from "../../assets/Footer/youtube.png";
-import twitter from "../../assets/Footer/twitter.png";
 
 function Footer() {
   return (
@@ -18,7 +14,7 @@ function Footer() {
       </article>
 
       <article className="pagamento">
-        <h3>FORMAS DE PAGAMENTO</h3>
+        <h3>Formas de pagamento</h3>
             <ol>
                 <a href="#" target="_blank">
                     <li id="mastercard"></li>
@@ -37,12 +33,20 @@ function Footer() {
 
       <article className="redes-sociais">
         <h3>Siga-nos nas redes sociais</h3>
-        <div className="box-icones2">
-          <img src={instagram} alt="Logo do Instagram" />
-          <img src={facebook} alt="Logo do Facebook" />
-          <img src={youtube} alt="Logo do Youtube" />
-          <img src={twitter} alt="Logo do Twitter" />
-        </div>
+        <ol>
+          <a href="#" target="_blank">
+            <li id="instagram"></li>
+          </a>
+          <a href="#" target="_blank">
+            <li id="facebook"></li>
+          </a>
+          <a href="#" target="_blank">
+            <li id="youtube"></li>
+          </a>
+          <a href="#" target="_blank">
+            <li id="twitter"></li>
+          </a>
+        </ol>
       </article>
     </section>
   );

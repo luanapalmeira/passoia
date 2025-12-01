@@ -6,7 +6,7 @@ import imgTendencia from "../../assets/Looks/tendência.png";
 
 function Looks() {
   return (
-    <section className="looks">
+    <section className="looks" id="secao-looks">
       <h2>Looks e dicas de maquiagem</h2>
       <section className="box-imagens">
         <img src={imgLabios} alt="Modelo passando lip oil na boca" />

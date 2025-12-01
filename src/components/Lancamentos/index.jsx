@@ -38,7 +38,7 @@ function Lancamentos() {
   };
 
   return (
-    <section className="lancamentos">
+    <section className="lancamentos" id="secao-lancamentos">
       <h2>Aproveite os lançamentos</h2>
       <div className="alinhamento">
         <div className="imagens-kits">

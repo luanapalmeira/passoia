@@ -5,11 +5,19 @@ header {
   height: 15vh;
   box-shadow: 0px 5px 5px 0px #00000040;
   background-color: #ffffff;
-  position: relative;
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   img {
     margin-left: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   ul {
@@ -17,7 +25,7 @@ header {
     width: 22%;
     justify-content: space-between;
     margin-right: 3rem;
-    
+
     li {
       list-style: none;
 
