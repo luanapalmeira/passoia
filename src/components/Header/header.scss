@@ -20,6 +20,10 @@ header {
     }
   }
 
+  .hamburger-img {
+    display: none;
+  }
+
   ul {
     display: flex;
     width: 22%;
@@ -41,6 +45,62 @@ header {
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
         }
       }
+    }
+  }
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    height: 31vh;
+    width: 92%;
+
+    img {
+      width: 36%;
+    }
+
+    .hamburger-img {
+      display: flex;
+      margin-right: 2rem;
+      z-index: 20;
+      cursor: pointer;
+
+      img {
+        width: 18vw;
+        height: auto;
+        margin-right: 4rem;
+      }
+    }
+
+    ul {
+      position: absolute;
+      top: 31vh;    //Fica logo abaixo do header fixo
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      gap: 1.5rem;
+      
+      /* estado fechado */
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-in-out, padding 0.3s;
+
+      li {
+        width: 25%;
+
+        a {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    /* menu aberto */
+    .menu-open {
+      padding: 2.5rem 0;
+      max-height: 500px;
+      font-size: 4rem;
     }
   }
 }

@@ -1,7 +1,11 @@
+import { useState } from "react";
 import "./header.scss";
 import logo from "../../assets/Header/logo.png";
+import menuIcon from "../../assets/Header/menu.svg";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header>
       <img
@@ -11,15 +15,19 @@ function Header() {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
 
-      <ul>
+      <div className="hamburger-img" onClick={() => setMenuOpen(!menuOpen)}>
+        <img src={menuIcon} alt="Menu" />
+      </div>
+
+      <ul className={menuOpen ? "menu-open" : ""}>
         <li>
-          <a href="#secao-looks"> LOOKS </a>
+          <a href="#secao-looks" onClick={() => setMenuOpen(false)}> LOOKS </a>
         </li>
         <li>
-          <a href="#secao-lancamentos"> LANÇAMENTOS </a>
+          <a href="#secao-lancamentos" onClick={() => setMenuOpen(false)}> LANÇAMENTOS </a>
         </li>
         <li>
-          <a href="#secao-novidades"> NOVIDADES </a>
+          <a href="#secao-novidades" onClick={() => setMenuOpen(false)}> NOVIDADES </a>
         </li>
       </ul>
     </header>
