@@ -19,7 +19,7 @@ function Header() {
         <img src={menuIcon} alt="Menu" />
       </div>
 
-      <ul className={menuOpen ? "menu-open" : ""}>
+      <ul className={menuOpen ? "menu-mobile menu-open" : "menu-mobile"}>
         <li>
           <a href="#secao-looks" onClick={() => setMenuOpen(false)}> LOOKS </a>
         </li>

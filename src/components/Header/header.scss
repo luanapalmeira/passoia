@@ -49,13 +49,12 @@ header {
   }
 }
 
-@media (min-width: 201px) and (max-width: 500px) {
+@media (max-width: 768px) {
   header {
-    height: 31vh;
-    width: 92%;
+    height: 10vh;
 
     img {
-      width: 36%;
+      width: 35vw;
     }
 
     .hamburger-img {
@@ -65,16 +64,15 @@ header {
       cursor: pointer;
 
       img {
-        width: 18vw;
+        width: 10vw;
         height: auto;
-        margin-right: 4rem;
+        margin-left: 8rem;
       }
     }
 
     ul {
       position: absolute;
-      top: 31vh;    //Fica logo abaixo do header fixo
-      left: 0;
+      top: 10vh;    //Fica logo abaixo do header fixo
       width: 100%;
       background: #ffffff;
       flex-direction: column;
@@ -91,7 +89,7 @@ header {
         width: 25%;
 
         a {
-          font-size: 2.5rem;
+          font-size: 1.3rem;
         }
       }
     }
@@ -100,7 +98,7 @@ header {
     .menu-open {
       padding: 2.5rem 0;
       max-height: 500px;
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 }
